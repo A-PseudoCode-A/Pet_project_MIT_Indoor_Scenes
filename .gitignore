@@ -1,0 +1,3 @@
+rooms_images/
+.venv/
+*.parquet
