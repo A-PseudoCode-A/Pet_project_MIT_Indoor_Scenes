@@ -15,7 +15,7 @@ def graphics_det(title, x_name, y_name, rotation=None):
 plt.rcParams.update({'font.size': 10})
 data = pd.read_parquet("../1_data/1_3_ready_data/dataset.parquet")
 
-cnt_images_data = data.iloc[:, [0, -1]].groupby(by='class', axis=0).count().iloc[:, 0].sum()
+cnt_images_data = data.iloc[:, [0, -1]].groupby(by='class', axis=0).count()
 
 graphics_det(
     title="Распределение изображений в классах",
